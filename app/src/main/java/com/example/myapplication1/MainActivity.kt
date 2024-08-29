@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btn.setOnClickListener{
-            binding.txt.text="안채연"
+            //binding.txt.text="안채연"
         }
     }
 }
