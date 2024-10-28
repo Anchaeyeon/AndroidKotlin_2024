@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#FF0000"
+        android:text="안채연"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="right|bottom" />
+    <!--android:layout_gravity="center_horizontal" - 부모에 대해서 어디에 배치할지
+        android:gravity="right|bottom" - 나의 자식에 대해서 어디에 배치할지-->
+</LinearLayout>
