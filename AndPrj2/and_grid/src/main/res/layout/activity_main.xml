@@ -33,7 +33,8 @@
             android:layout_gravity="right"/>
         <EditText
             android:id="@+id/edtPW"
-            android:layout_width="match_parent"/>
+            android:layout_width="match_parent"
+            android:inputType="textPassword"/>
     </GridLayout>
     <LinearLayout
         android:layout_marginTop="10dp"
