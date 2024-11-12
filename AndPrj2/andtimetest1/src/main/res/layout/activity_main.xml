@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="예약 완료"
-            android:id="@+id/btnStrop"/>
+            android:id="@+id/btnStop"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
