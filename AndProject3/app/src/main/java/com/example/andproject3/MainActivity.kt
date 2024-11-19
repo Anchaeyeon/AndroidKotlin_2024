@@ -14,4 +14,5 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
+    //메뉴 설정 (액션바에 들어감) --> 테마((theme)values 폴더에 있음) 설정에서 NoActionBar 이면 메뉴 오픈 불가
 }
