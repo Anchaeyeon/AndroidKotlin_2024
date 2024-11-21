@@ -6,6 +6,7 @@ import android.os.SystemClock
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -72,7 +73,12 @@ class MainActivity : AppCompatActivity() {
                 dlg.setIcon(R.mipmap.ic_launcher_round)
                 var dlgView: View = View.inflate(this, R.layout.dialog, null)
                 dlg.setView(dlgView)
-                dlg.setPositiveButton("확인", null)
+                dlg.setPositiveButton("확인") { dialog, which ->
+                    var id = dlgView.findViewById<EditText>(R.id.edtID).text.toString() //아이디 저장
+                    var pw = dlgView.findViewById<EditText>(R.id.edtPW).text.toString() //비밀번호 저장
+                    Toast.makeText(applicationContext, "아이디 : " + id + "\n비밀번호 : " + pw, Toast.LENGTH_SHORT).show()
+                }
+                dlg.setNegativeButton("취소", null)
                 dlg.show()
             }
         }
