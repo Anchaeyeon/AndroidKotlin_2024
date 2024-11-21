@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        super.onOptionsItemSelected(item)
         when (item.itemId) {
             R.id.itemLogin -> {
                 var dlg : AlertDialog.Builder = AlertDialog.Builder(this@MainActivity)
