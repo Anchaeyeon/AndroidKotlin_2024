@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndProject3"
 include(":app")
- 
+include(":andtablaymenudlg")
