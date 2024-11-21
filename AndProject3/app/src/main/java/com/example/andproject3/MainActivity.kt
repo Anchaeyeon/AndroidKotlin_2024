@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.os.SystemClock
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -53,8 +55,26 @@ class MainActivity : AppCompatActivity() {
                 dlg.setPositiveButton("확인", null)
                 dlg.show()
             }
-            R.id.itemDlg1 -> {}
-            R.id.itemDlg2 -> {}
+            R.id.itemDlg1 -> {
+                var dlg : AlertDialog.Builder = AlertDialog.Builder(this@MainActivity)
+                dlg.setTitle("좋아하는 분식은?")
+                dlg.setIcon(R.mipmap.ic_launcher_round)
+                var arr = arrayOf("떡볶이", "튀김", "어묵")
+                dlg.setItems(arr) { dialog, which ->
+                    Toast.makeText(applicationContext, arr[which], Toast.LENGTH_SHORT).show()
+                }
+                dlg.setPositiveButton("확인", null)
+                dlg.show()
+            }
+            R.id.itemDlg2 -> {
+                var dlg : AlertDialog.Builder = AlertDialog.Builder(this@MainActivity)
+                dlg.setTitle("로그인")
+                dlg.setIcon(R.mipmap.ic_launcher_round)
+                var dlgView: View = View.inflate(this, R.layout.dialog, null)
+                dlg.setView(dlgView)
+                dlg.setPositiveButton("확인", null)
+                dlg.show()
+            }
         }
         return super.onOptionsItemSelected(item)
     }
