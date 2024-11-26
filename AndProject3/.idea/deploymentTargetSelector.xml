@@ -8,6 +8,9 @@
       <SelectionState runConfigName="andtablaymenudlg">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+      <SelectionState runConfigName="andactivitytest1">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>
