@@ -11,5 +11,7 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = SecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnReturn.setOnClickListener { finish() }
     }
 }

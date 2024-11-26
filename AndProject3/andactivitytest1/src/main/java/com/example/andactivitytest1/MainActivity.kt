@@ -1,5 +1,6 @@
 package com.example.andactivitytest1
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,5 +14,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnNewActivity.setOnClickListener {
+            var intent = Intent(this, SecondActivity::class.java) //Intent 클래스(객체)
+            startActivity(intent)
+        }
     }
 }
