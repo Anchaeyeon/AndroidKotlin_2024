@@ -23,3 +23,4 @@ rootProject.name = "AndProject3"
 include(":app")
 include(":andtablaymenudlg")
 include(":andactivitytest1")
+include(":andactivitytest2")

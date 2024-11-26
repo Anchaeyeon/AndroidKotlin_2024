@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/andactivitytest1" />
+            <option value="$PROJECT_DIR$/andactivitytest2" />
             <option value="$PROJECT_DIR$/andtablaymenudlg" />
             <option value="$PROJECT_DIR$/app" />
           </set>
