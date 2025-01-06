@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:columnCount="2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="회 원 가 입"
+        android:layout_height="50dp"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="2"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="#ECD0F6"/>
+
+    <TextView
+        android:text="이  름"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_columnWeight="1"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_marginTop="10dp"
+        android:layout_columnWeight="2"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="전화번호"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_columnWeight="1"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edtTel"
+        android:layout_marginTop="10dp"
+        android:layout_columnWeight="2"
+        android:textSize="20dp"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:text="가 입"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="2"/>
+</GridLayout>
