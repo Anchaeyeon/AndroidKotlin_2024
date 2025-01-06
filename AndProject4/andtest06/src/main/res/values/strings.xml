@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndTest06</string>
+    <string-array name="operator">
+        <item> + </item>
+        <item> - </item>
+        <item> * </item>
+        <item> % </item>
+    </string-array>
+</resources>
