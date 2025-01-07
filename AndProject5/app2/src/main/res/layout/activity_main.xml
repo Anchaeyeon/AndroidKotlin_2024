@@ -30,6 +30,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="아이디 찾기"
+            android:onClick="funChk"
             android:background="#00BCD4"/>
         <Button
             android:layout_width="0dp"
@@ -38,6 +39,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="비밀번호 찾기"
+            android:onClick="funChk"
             android:background="#00BCD4"/>
     </LinearLayout>
     <TableLayout
