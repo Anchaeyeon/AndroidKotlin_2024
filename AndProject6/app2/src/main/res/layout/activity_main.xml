@@ -140,7 +140,7 @@
         android:id="@+id/tvResult"
         android:gravity="end"
         android:text="결과: 0"
-        android:textColor="#ff0000"
+        android:textColor="#FD00B5"
         android:textSize="25dp"
         android:textStyle="bold"/>
 </LinearLayout>
