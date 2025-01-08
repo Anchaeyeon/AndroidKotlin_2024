@@ -7,7 +7,7 @@ import com.example.app2.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
 
-    private var exp = "" //수식 전달
+    private var exp = "" //수식 저장
     private var currentInput = "" //숫자 입력
     private var firstOperand: Int? = null //첫 번째 피연산자
     private var operator: String? = null //연산자
@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
                     firstOperand = currentInput.toInt()
                     operator = op
                     currentInput = ""
+                    binding.tvInput.text = ""
                     exp = "$firstOperand $op"
                     binding.tvExp.text = exp
                     ch = 0
@@ -77,7 +78,7 @@ class MainActivity : AppCompatActivity() {
 
         //"C" 버튼 클릭 이벤트
         binding.btnClear.setOnClickListener {
-            exp = ""; currentInput = ""
+            exp = ""; ch = 1; currentInput = ""
             firstOperand = null; operator = null
             binding.tvInput.text = "0"
             binding.tvResult.text = "결과: 0"
