@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">app6</string>
+    <string name="app_name">Chaeyeon Movie</string>
+    <string name="navi_drawer_open">Open navi</string>
+    <string name="navi_drawer_closer">Close navi</string>
 </resources>
