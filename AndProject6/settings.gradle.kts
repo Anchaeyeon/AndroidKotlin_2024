@@ -23,3 +23,4 @@ rootProject.name = "AndProject6"
 include(":app")
 include(":app2")
 include(":app3")
+include(":app4")
