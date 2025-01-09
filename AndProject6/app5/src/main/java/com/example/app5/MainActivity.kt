@@ -46,5 +46,11 @@ class MainActivity : AppCompatActivity() {
                 dlg.show()
             }
         }
+        binding.fab.setOnClickListener { //플로팅버튼 - 이벤트 처리 (데이터 추가)
+            var m = Movie(ContextCompat.getDrawable(this, poster[0])!!, title[0])
+            datas.add(m)
+            adapter.notifyDataSetChanged() //리사이클러뷰 새로고침
+            Toast.makeText(applicationContext, "플로팅 버튼 클릭", Toast.LENGTH_SHORT).show()
+        }
     }
 }
