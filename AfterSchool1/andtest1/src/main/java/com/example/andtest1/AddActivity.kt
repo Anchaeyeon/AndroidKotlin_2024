@@ -13,6 +13,7 @@ class AddActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAddBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setSupportActionBar(binding.toolbarAdd) //툴바 세팅
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

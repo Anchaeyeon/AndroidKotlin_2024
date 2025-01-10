@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">AndTest1</string>
+    <string name="app_name">TodoList</string>
+    <string name="navi_drawer_open">Open navi</string>
+    <string name="navi_drawer_close">Close navi</string>
 </resources>
