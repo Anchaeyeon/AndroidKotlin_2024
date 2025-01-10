@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AfterSchool1"
 include(":app")
- 
+include(":andtest1")
