@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
         datas = savedInstanceState?.let {
             it.getStringArrayList("datas")?.toMutableList()
-        } ?: let { mutableListOf<String>() }
+        } ?: let { mutableListOf<String>() }  //let: null 체크
 
         adapter = MyAdapter(datas) // 어댑터에 데이터 세팅
         binding.mainRecyclerView.layoutManager = LinearLayoutManager(this) // 리사이클러뷰 세팅 (레이아웃 설정)
