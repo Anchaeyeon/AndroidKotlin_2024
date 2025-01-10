@@ -3,15 +3,15 @@
     <item
         android:id="@+id/item1"
         android:icon="@android:drawable/ic_menu_share"
-        android:title="아이템1"/>
+        android:title="공유하기"/>
     <item
         android:id="@+id/item2"
         android:icon="@android:drawable/ic_menu_help"
-        android:title="아이템2"/>
+        android:title="질문하기"/>
     <item
         android:id="@+id/item3"
         android:icon="@android:drawable/ic_menu_search"
-        android:title="아이템3"/>
+        android:title="검색하기"/>
     <item
         android:id="@+id/item4"
         android:icon="@android:drawable/ic_menu_add"
