@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.andtest3.databinding.ItemBinding
 
-data class User(var num: Int, var name: String, var tel: String)
+data class User(var num: Int?, var name: String, var tel: String)
 class MyViewHolder(val binding: ItemBinding): RecyclerView.ViewHolder(binding.root)
 class MyRecyclerAdapter(val datas: MutableList<User>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     interface ItemClick { fun onClick(view: View, position: Int) }
