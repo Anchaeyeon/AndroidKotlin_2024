@@ -6,10 +6,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.andtest3.databinding.ItemBinding
 
-data class User(var name: String, var tel: String)
+data class User(var num: Int, var name: String, var tel: String)
 class MyViewHolder(val binding: ItemBinding): RecyclerView.ViewHolder(binding.root)
 class MyRecyclerAdapter(val datas: MutableList<User>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-    //var helper: MyDBHelpe? = null
     interface ItemClick { fun onClick(view: View, position: Int) }
     var itemClick: ItemClick? = null
 
