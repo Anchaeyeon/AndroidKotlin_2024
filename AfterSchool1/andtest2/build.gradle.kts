@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.andtest2"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.andtest2"
@@ -18,7 +18,11 @@ android {
     }
 
     buildTypes {
+
         release {
+            buildFeatures{
+                viewBinding = true
+            }
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
