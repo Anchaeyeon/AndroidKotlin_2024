@@ -23,3 +23,4 @@ rootProject.name = "AfterSchool1"
 include(":app")
 include(":andtest1")
 include(":andtest2")
+include(":andtest3")
