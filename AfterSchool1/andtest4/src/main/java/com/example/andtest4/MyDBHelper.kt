@@ -10,7 +10,7 @@ class MyDBHelper(context: Context): SQLiteOpenHelper(context, DATABASE_NAME, nul
     companion object { //static 멤버 변수 선언
         val DATABASE_NAME = "todo.db"
         val DATABASE_VER = 1
-        val TABLE_NAME = "userTBL"
+        val TABLE_NAME = "todo"
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
