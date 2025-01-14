@@ -23,6 +23,14 @@ class AddActivity : AppCompatActivity() {
         binding = ActivityAddBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //툴바 세팅
+        setSupportActionBar(binding.toolbarAdd)
+        //Actionbar에서 뒤로가기 버튼 활성화
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            setDisplayShowHomeEnabled(true)
+        }
+
         val todo = intent.getSerializableExtra("todo")
         if (todo != null) { //받은 todo가 있을 경우 수정모드로 세팅
             todo as Todo
@@ -52,7 +60,7 @@ class AddActivity : AppCompatActivity() {
                 myDB.addTodo(todo)
             else if (mode==1)
                 myDB.updateTodo(todo)
-            Toast.makeText(this, "할 일 저장 성공", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "할 일이 저장되었습니다", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
@@ -63,10 +71,17 @@ class AddActivity : AppCompatActivity() {
             val writedate = calendar.timeInMillis
             val todo = Todo(title, memo, writedate)
             myDB.deleteTodo(todo)
-            Toast.makeText(this, "할 일 삭제 성공", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "할 일이 삭제되었습니다", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity::class.java)
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP) //맨 위로 오픈(startActivity)
             startActivity(intent)
         }
+    }
+
+    //뒤로가기 버튼 동작 처리
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        onBackPressedDispatcher.onBackPressed() //뒤로가기
+        return true
     }
 }
