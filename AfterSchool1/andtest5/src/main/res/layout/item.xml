@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBF7D5"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textNo"
+            android:layout_marginStart="8dp"
+            android:text="01"
+            android:textSize="22dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textContent"
+            android:layout_marginStart="8dp"
+            android:layout_toRightOf="@+id/textNo"
+            android:text="메모 내용 표시"
+            android:textSize="22dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonDelete"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:text="삭제"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDatetime"
+        android:layout_marginEnd="8dp"
+        android:background="#FBF7D5"
+        android:gravity="right"
+        android:text="2025/01/14 13:57"/>
+</LinearLayout>
