@@ -23,7 +23,7 @@ class MusicAdapter(private val musicList: List<MusicItem>, //음악 목록
         holder.binding.txtArtist.text = music.artist
         holder.binding.root.setBackgroundColor(
             if (position == (holder.binding.root.context as MainActivity).selectedPosition) {
-                android.graphics.Color.parseColor("#DQ7CE6")
+                android.graphics.Color.parseColor("#DA7CE6")
             }
             else {
                 android.graphics.Color.TRANSPARENT //선택되지 않은 항목은 투명
@@ -33,6 +33,5 @@ class MusicAdapter(private val musicList: List<MusicItem>, //음악 목록
             onItemClick(music, position)
         }
     }
-
     override fun getItemCount(): Int = musicList.size
 }
