@@ -34,7 +34,7 @@ class MyDBHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, nu
         }
     }
 
-    fun getCartItem(): Cursor{ return readableDatabase.query(TABLE_CART, null, null, null, null, null, null) }
+    fun getCartItems(): Cursor{ return readableDatabase.query(TABLE_CART, null, null, null, null, null, null) }
     fun deleteCartItem(id: Int) {
         writableDatabase.use { db -> db.delete(TABLE_CART, "$COLUMN_ID=?", arrayOf(id.toString())) }
     }
