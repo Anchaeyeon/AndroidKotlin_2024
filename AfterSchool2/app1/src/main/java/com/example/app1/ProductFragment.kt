@@ -26,7 +26,7 @@ class ProductFragment : Fragment() {
             productList.filter { it.isSelected }.forEach { product -> dbHelper.addToCart(product.name) }
             productList.forEach { it.isSelected = false } //체크 해제
             adapter.notifyDataSetChanged() //Update UI
-            //(activity as MainActivity).navigateUpToTab(1) //아직 MainActivity에서 구현하지 않았기에 에러가 나는 게 맞음
+            (activity as MainActivity).navigateToTab(1)
         }
         return binding.root
     }
